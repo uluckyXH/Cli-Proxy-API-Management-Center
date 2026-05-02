@@ -76,5 +76,6 @@ export const API_ENDPOINTS = {
   PROVIDERS: '/providers',
   AUTH_FILES: '/auth-files',
   OAUTH: '/oauth',
+  USAGE: '/usage',
   LOGS: '/logs'
 } as const;

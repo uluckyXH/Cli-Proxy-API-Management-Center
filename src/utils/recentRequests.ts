@@ -1,20 +1,6 @@
-export type StatusBlockState = 'success' | 'failure' | 'mixed' | 'idle';
+import type { StatusBarData, StatusBlockDetail, StatusBlockState } from '@/utils/usage';
 
-export interface StatusBlockDetail {
-  success: number;
-  failure: number;
-  rate: number;
-  startTime: number;
-  endTime: number;
-}
-
-export interface StatusBarData {
-  blocks: StatusBlockState[];
-  blockDetails: StatusBlockDetail[];
-  successRate: number;
-  totalSuccess: number;
-  totalFailure: number;
-}
+export type { StatusBarData, StatusBlockDetail, StatusBlockState };
 
 export interface RecentRequestBucket {
   time?: string;
